@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0e1a">
+    <title>Jinyuanh.com - Privacy-First Digital Products & Programmatic Innovation Studio</title>
+    <meta name="description" content="Jinyuanh.com is an innovation studio specializing in programmatic technology, immersive UX, and privacy-first local-only mobile applications. We craft minimalist, secure, and zen-inspired digital experiences for global users.">
+    <meta name="keywords" content="jinyuanh, privacy first apps, programmatic generation, minimalist design, local data storage, immersive UX, mobile applications, indie studio, zen design, technology innovation">
+    <meta name="author" content="Jinyuanh Team">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="geo.region" content="US-AZ">
+    <meta name="geo.placename" content="Arizona">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jinyuanh.com - Privacy-First Digital Products Studio">
+    <meta property="og:description" content="Engineering minimalism. We craft secure, programmatic, immersive digital experiences with local-first data philosophy.">
+    <meta property="og:url" content="https://jinyuanh.com/">
+    <meta property="og:site_name" content="Jinyuanh">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://jinyuanh.com/images/og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:image" content="https://jinyuanh.com/images/og-image.svg">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jinyuanh.com - Privacy-First Digital Products Studio">
+    <meta name="twitter:description" content="Engineering minimalism. We craft secure, programmatic, immersive digital experiences with local-first data philosophy.">
+
+    <link rel="canonical" href="https://jinyuanh.com/">
+    <link rel="alternate" hreflang="en" href="https://jinyuanh.com/">
+    <link rel="alternate" hreflang="x-default" href="https://jinyuanh.com/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Jinyuanh",
+        "url": "https://jinyuanh.com/",
+        "logo": "https://jinyuanh.com/images/logo.svg",
+        "description": "Innovation studio crafting privacy-first, programmatic, and immersive digital experiences.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sky Song Innovation Park, Arizona State University",
+            "addressRegion": "AZ",
+            "addressCountry": "US"
+        },
+        "email": "contact@jinyuanh.com"
+    }
+    </script>
+</head>
+<body>
+
+<div class="loading-screen" id="loading-screen">
+    <div class="loading-logo">&lt;jinyuanh/&gt;</div>
+    <div class="loading-bar-container">
+        <div class="loading-bar" id="loading-bar"></div>
+    </div>
+    <div class="loading-text" id="loading-text">INITIALIZING SYSTEM</div>
+    <div class="loading-percent" id="loading-percent">0%</div>
+</div>
+
+<canvas id="particles-canvas"></canvas>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo" aria-label="Jinyuanh Home">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="20" cy="20" r="18" stroke="#00e5ff" stroke-width="2"/>
+                <path d="M10 20 L18 12 L26 28 L30 20" stroke="#00e5ff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle class="logo-dot" cx="20" cy="20" r="3" fill="#00e5ff"/>
+            </svg>
+            <span>&lt;jinyuanh/&gt;</span>
+        </a>
+        <ul class="nav-menu" role="menubar">
+            <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+            <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+            <li role="none"><a href="advantages.html" role="menuitem">Advantages</a></li><li role="none"><a href="capabilities.html" role="menuitem">Capabilities</a></li><li role="none"><a href="products.html" role="menuitem">Products</a></li><li role="none"><a href="roadmap.html" role="menuitem">Roadmap</a></li>
+            <li role="none"><a href="news.html" role="menuitem">News</a></li>
+            <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="hero-bg">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-tag">
+                <span class="status-dot"></span>
+                <span>SYSTEM ONLINE // v2.6.0</span>
+            </div>
+            <h1>Engineering<br><span class="gradient-text">Minimalism.</span><br>Crafting Privacy.</h1>
+            <p>We are a research-driven innovation studio specializing in programmatic technology, immersive UX design, and privacy-first local digital products. Minimalist by philosophy. Secure by default. Zen-inspired by intention.</p>
+            <div class="hero-actions">
+                <a href="services.html" class="btn btn-primary">
+                    <span>Explore Services</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <span>Start a Project</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="stats-section" aria-label="Key statistics">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item reveal">
+                <span class="stat-number" data-target="50" data-suffix="+">0</span>
+                <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat-item reveal">
+                <span class="stat-number" data-target="12" data-suffix="">0</span>
+                <span class="stat-label">Team Engineers</span>
+            </div>
+            <div class="stat-item reveal">
+                <span class="stat-number" data-target="100" data-suffix="%">0</span>
+                <span class="stat-label">Privacy First</span>
+            </div>
+            <div class="stat-item reveal">
+                <span class="stat-number" data-target="7" data-suffix="">0</span>
+                <span class="stat-label">Years of Innovation</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" aria-label="About Jinyuanh">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// About the Studio</span>
+            <h2 class="section-title">Built on Three Pillars of Innovation</h2>
+            <p class="section-subtitle">Minimalism in code. Privacy in architecture. Zen in experience. We translate complex technology into calm, beautiful, secure products.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card reveal">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <h3>Minimalist Engineering</h3>
+                <p>We obsess over removing what is not necessary. Each line of code, every pixel, every interaction earns its place. The result is software that feels effortless, fast, and focused.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Privacy by Default</h3>
+                <p>Your data belongs to you. Our products operate fully on-device — no surveillance, no cloud tracking, no compromise. Privacy is not a feature; it is the foundation of trust.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Immersive UX</h3>
+                <p>Design that transcends utility. We blend immersive visual storytelling with functional clarity to create digital moments that calm the mind and elevate the spirit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);" aria-label="Live system data">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Live System Telemetry</span>
+            <h2 class="section-title">Real-Time Engineering Dashboard</h2>
+            <p class="section-subtitle">A glimpse into our production stack — code quality, privacy-first principles, and continuous delivery pipelines running 24/7.</p>
+        </div>
+        <div class="grid grid-2">
+            <div class="data-viz reveal">
+                <div class="data-viz-header">
+                    <span class="data-viz-title">performance_metrics.weekly()</span>
+                    <span class="data-viz-badge">LIVE</span>
+                </div>
+                <div class="bar-chart" aria-label="Performance chart">
+                    <div class="bar" data-value="92" data-height="92"></div>
+                    <div class="bar" data-value="88" data-height="88"></div>
+                    <div class="bar" data-value="95" data-height="95"></div>
+                    <div class="bar" data-value="91" data-height="91"></div>
+                    <div class="bar" data-value="97" data-height="97"></div>
+                    <div class="bar" data-value="94" data-height="94"></div>
+                    <div class="bar" data-value="98" data-height="98"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-top: 8px;">
+                    <span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span>
+                </div>
+            </div>
+            <div class="data-viz reveal">
+                <div class="data-viz-header">
+                    <span class="data-viz-title">privacy_score.distribution</span>
+                    <span class="data-viz-badge">SECURE</span>
+                </div>
+                <div class="bar-chart" aria-label="Privacy score chart">
+                    <div class="bar" data-value="100" data-height="100" style="background: linear-gradient(180deg, #00ff88, #00e5ff);"></div>
+                    <div class="bar" data-value="98" data-height="98" style="background: linear-gradient(180deg, #00ff88, #00e5ff);"></div>
+                    <div class="bar" data-value="100" data-height="100" style="background: linear-gradient(180deg, #00ff88, #00e5ff);"></div>
+                    <div class="bar" data-value="100" data-height="100" style="background: linear-gradient(180deg, #00ff88, #00e5ff);"></div>
+                    <div class="bar" data-value="99" data-height="99" style="background: linear-gradient(180deg, #00ff88, #00e5ff);"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-top: 8px;">
+                    <span>LOCAL</span><span>ENCRYPT</span><span>NO-LOG</span><span>GDPR</span><span>CCPA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="terminal-section" aria-label="Terminal interface">
+    <div class="container">
+        <div class="terminal reveal" id="terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                </div>
+                <div class="terminal-title">~/jinyuanh — zsh — 80×24</div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line"><span class="terminal-prompt">visitor@jinyuanh</span>:<span class="terminal-command">~</span>$ whoami</div>
+                <div class="terminal-line terminal-output">→ privacy_first_engineer // minimalist_designer // zen_advocate</div>
+                <div class="terminal-line"><span class="terminal-prompt">visitor@jinyuanh</span>:<span class="terminal-command">~</span>$ cat ./philosophy.md</div>
+                <div class="terminal-line terminal-output">→ "Technology should disappear into the experience."</div>
+                <div class="terminal-line"><span class="terminal-prompt">visitor@jinyuanh</span>:<span class="terminal-command">~</span>$ ls ./products/</div>
+                <div class="terminal-line terminal-output">→ audio_editor · expiry_tracker · route_logger · goal_engine · collection_vault</div>
+                <div class="terminal-line"><span class="terminal-prompt">visitor@jinyuanh</span>:<span class="terminal-command">~</span>$ ./start_collaboration.sh</div>
+                <div class="terminal-line terminal-output">→ Initializing handshake protocol...<span class="terminal-cursor"></span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" aria-label="Application portfolio">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// App Portfolio</span>
+            <h2 class="section-title">Tools We Have Engineered</h2>
+            <p class="section-subtitle">A growing matrix of focused applications — each a digital sanctuary for music, cooking, travel, archive management and creative work.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="service-tile reveal">
+                <div class="service-tile-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                </div>
+                <h3>Multi-Track Audio Editor</h3>
+                <p>Offline multi-track recording and editing. Your sound, your studio, fully on-device.</p>
+                <div class="service-tile-tags">
+                    <span class="service-tile-tag">Offline</span>
+                    <span class="service-tile-tag">Pro</span>
+                </div>
+            </div>
+            <div class="service-tile reveal">
+                <div class="service-tile-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </div>
+                <h3>Freshness Tracker</h3>
+                <p>Calculate shelf-life and expiry windows for ingredients.</p>
+                <div class="service-tile-tags">
+                    <span class="service-tile-tag">Kitchen</span>
+                    <span class="service-tile-tag">Local</span>
+                </div>
+            </div>
+            <div class="service-tile reveal">
+                <div class="service-tile-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h3>Route Logger</h3>
+                <p>Self-drive trip recorder with local trajectory storage.</p>
+                <div class="service-tile-tags">
+                    <span class="service-tile-tag">Travel</span>
+                    <span class="service-tile-tag">GPS</span>
+                </div>
+            </div>
+            <div class="service-tile reveal">
+                <div class="service-tile-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                </div>
+                <h3>Credential Expiry Alert</h3>
+                <p>License and certification reminder engine.</p>
+                <div class="service-tile-tags">
+                    <span class="service-tile-tag">Archive</span>
+                </div>
+            </div>
+            <div class="service-tile reveal">
+                <div class="service-tile-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <h3>Personal Goal Engine</h3>
+                <p>Decompose ambitious goals into actionable milestones.</p>
+                <div class="service-tile-tags">
+                    <span class="service-tile-tag">Productivity</span>
+                </div>
+            </div>
+            <div class="service-tile reveal">
+                <div class="service-tile-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <h3>Collection Vault</h3>
+                <p>Aesthetic cataloging for jewelry and collectibles.</p>
+                <div class="service-tile-tags">
+                    <span class="service-tile-tag">Catalog</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: linear-gradient(180deg, var(--bg-primary), var(--bg-secondary));" aria-label="Call to action">
+    <div class="container text-center">
+        <div class="reveal">
+            <h2 class="section-title">Ready to Build Something Meaningful?</h2>
+            <p class="section-subtitle" style="margin-bottom: 40px;">Let's engineer a privacy-respecting digital experience together.</p>
+            <a href="contact.html" class="btn btn-primary">
+                <span>Get In Touch</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section" aria-label="Engineering process workflow">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Engineering Workflow</span>
+            <h2 class="section-title">How We Build</h2>
+            <p class="section-subtitle">A disciplined five-stage pipeline from concept to ship, refined over dozens of projects.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card reveal">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+                <h3>01. Research</h3>
+                <p>User psychology, regulatory mapping, market scan, technical feasibility.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+                <h3>02. Architecture</h3>
+                <p>Privacy-by-design schemas, module boundaries, threat models.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                <h3>03. Implementation</h3>
+                <p>Test-driven Swift / Kotlin, continuous integration, design tokens.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                <h3>04. Validation</h3>
+                <p>Beta cohorts, accessibility evaluation, security audit.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/></svg></div>
+                <h3>05. Ship & Iterate</h3>
+                <p>App Store submission, ASO tuning, weekly point releases.</p>
+            </div>
+            <div class="card reveal" style="background: linear-gradient(135deg, rgba(0,229,255,0.08), rgba(124,77,255,0.08));">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg></div>
+                <h3>Outcome</h3>
+                <p>Beautiful, minimal, secure products that respect their users.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);" aria-label="Technology stack">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Technology Stack</span>
+            <h2 class="section-title">Our Engineering Stack</h2>
+            <p class="section-subtitle">Battle-tested technologies chosen for performance, longevity, and respect for user privacy.</p>
+        </div>
+        <div class="grid grid-4">
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></div>
+                <h3>Swift / SwiftUI</h3>
+                <p style="font-size: 13px;">Native iOS / iPadOS / macOS</p>
+            </div>
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/></svg></div>
+                <h3>Kotlin / Compose</h3>
+                <p style="font-size: 13px;">Native Android</p>
+            </div>
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg></div>
+                <h3>WebAssembly</h3>
+                <p style="font-size: 13px;">High-performance web compute</p>
+            </div>
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                <h3>On-Device ML</h3>
+                <p style="font-size: 13px;">CoreML, TFLite, Whisper.cpp</p>
+            </div>
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/></svg></div>
+                <h3>AVFoundation</h3>
+                <p style="font-size: 13px;">Real-time audio DSP</p>
+            </div>
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/></svg></div>
+                <h3>CoreLocation</h3>
+                <p style="font-size: 13px;">Trajectory & geofencing</p>
+            </div>
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/></svg></div>
+                <h3>Metal / GPU</h3>
+                <p style="font-size: 13px;">Accelerated composition</p>
+            </div>
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/></svg></div>
+                <h3>Combine / Rx</h3>
+                <p style="font-size: 13px;">Reactive data flow</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" aria-label="Code showcase">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Source Excerpt</span>
+            <h2 class="section-title">Code Quality, Observable</h2>
+            <p class="section-subtitle">A peek at our engineering standards: tested, typed, documented, observable.</p>
+        </div>
+        <div class="grid grid-2">
+            <div class="data-viz reveal">
+                <div class="data-viz-header">
+                    <span class="data-viz-title">code_metrics.swift_module()</span>
+                    <span class="data-viz-badge">v2.6.0</span>
+                </div>
+                <div style="font-family: var(--font-mono); font-size: 13px; line-height: 2.2;">
+                    <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,229,255,0.1); padding: 4px 0;"><span style="color: var(--text-muted);">files.count</span><span style="color: var(--accent-cyan);">1,847</span></div>
+                    <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,229,255,0.1); padding: 4px 0;"><span style="color: var(--text-muted);">lines_of_code</span><span style="color: var(--accent-cyan);">142,309</span></div>
+                    <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,229,255,0.1); padding: 4px 0;"><span style="color: var(--text-muted);">test_coverage</span><span style="color: var(--accent-green);">94.2%</span></div>
+                    <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,229,255,0.1); padding: 4px 0;"><span style="color: var(--text-muted);">lint_warnings</span><span style="color: var(--accent-green);">0</span></div>
+                    <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,229,255,0.1); padding: 4px 0;"><span style="color: var(--text-muted);">crash_free_users</span><span style="color: var(--accent-green);">99.97%</span></div>
+                    <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,229,255,0.1); padding: 4px 0;"><span style="color: var(--text-muted);">cold_launch_ms</span><span style="color: var(--accent-cyan);">240</span></div>
+                    <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,229,255,0.1); padding: 4px 0;"><span style="color: var(--text-muted);">memory_baseline_mb</span><span style="color: var(--accent-cyan);">38</span></div>
+                    <div style="display: flex; justify-content: space-between; padding: 4px 0;"><span style="color: var(--text-muted);">build_time_sec</span><span style="color: var(--accent-cyan);">47</span></div>
+                </div>
+            </div>
+            <div class="code-block reveal" aria-label="Code example">
+<span class="comment">// Jinyuanh · privacy-first audio engine</span>
+<span class="keyword">import</span> AVFoundation
+<span class="keyword">import</span> CryptoKit
+
+<span class="keyword">final class</span> <span class="function">LocalAudioEngine</span> {
+    <span class="keyword">private let</span> graph: AVAudioEngine
+    <span class="keyword">private let</span> storage: <span class="function">EncryptedFileStore</span>
+
+    <span class="keyword">func</span> <span class="function">record</span>(session: Session) <span class="keyword">async throws</span> -&gt; URL {
+        <span class="keyword">let</span> url = storage.<span class="function">protectedURL</span>(<span class="keyword">for</span>: session)
+        <span class="comment">// Capture never leaves the device</span>
+        <span class="keyword">try await</span> graph.<span class="function">capture</span>(into: url)
+        <span class="keyword">return</span> url
+    }
+}
+
+<span class="comment">// Zero network calls. Zero analytics. Pure local.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);" aria-label="User testimonials">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// User Signals</span>
+            <h2 class="section-title">What Users Say</h2>
+            <p class="section-subtitle">Selected feedback from App Store reviews and direct correspondence.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card reveal">
+                <div style="color: var(--accent-orange); font-size: 18px; margin-bottom: 12px;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 16px;">"Finally, an audio editor that doesn't try to upload my recordings. The local processing is exactly what I needed."</p>
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);">— Marcus L., Composer · App Store</div>
+            </div>
+            <div class="card reveal">
+                <div style="color: var(--accent-orange); font-size: 18px; margin-bottom: 12px;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 16px;">"The zen-like interface makes meal planning feel meditative. I genuinely look forward to opening this app."</p>
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);">— Yuki T., Home Chef · App Store</div>
+            </div>
+            <div class="card reveal">
+                <div style="color: var(--accent-orange); font-size: 18px; margin-bottom: 12px;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 16px;">"Privacy-respecting route tracking with no subscription. Best $0 I've spent on an iOS app."</p>
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);">— Anna R., Overlander · App Store</div>
+            </div>
+            <div class="card reveal">
+                <div style="color: var(--accent-orange); font-size: 18px; margin-bottom: 12px;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 16px;">"Visual design is unmatched. The motion design alone is worth installing."</p>
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);">— David K., Designer · Twitter</div>
+            </div>
+            <div class="card reveal">
+                <div style="color: var(--accent-orange); font-size: 18px; margin-bottom: 12px;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 16px;">"Clean, fast, and respects my data. This is how software should be made."</p>
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);">— Sarah M., Engineer · Product Hunt</div>
+            </div>
+            <div class="card reveal">
+                <div style="color: var(--accent-orange); font-size: 18px; margin-bottom: 12px;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 16px;">"The credential expiry alert saved me from a $400 re-certification fee. Worth every penny."</p>
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);">— James P., Pilot · App Store</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" aria-label="Frequently asked questions">
+    <div class="container" style="max-width: 900px;">
+        <div class="section-header reveal">
+            <span class="section-label">// Frequently Asked</span>
+            <h2 class="section-title">Common Questions</h2>
+        </div>
+        <div class="feature-list">
+            <div class="feature-item reveal">
+                <div class="feature-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+                <div><h4>Do you collect any of my data?</h4><p>No. By design, your recordings, routes, collection entries, and goals stay on your device.</p></div>
+            </div>
+            <div class="feature-item reveal">
+                <div class="feature-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 0 1 4 10"/></svg></div>
+                <div><h4>Which App Store regions are supported?</h4><p>All major regions: US, UK, EU, Canada, Australia, Japan, Korea, Singapore, Hong Kong, Taiwan, India, Brazil, Mexico.</p></div>
+            </div>
+            <div class="feature-item reveal">
+                <div class="feature-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><line x1="1.42" y1="9" x2="1.42" y2="9"/></svg></div>
+                <div><h4>Do your apps work offline?</h4><p>Yes — every Jinyuanh app is engineered to function fully without internet. Online connectivity is only for opt-in features.</p></div>
+            </div>
+            <div class="feature-item reveal">
+                <div class="feature-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+                <div><h4>How can I delete my data?</h4><p>Use the in-app deletion feature, or simply uninstall the app. For accounts, email contact@jinyuanh.com for full deletion.</p></div>
+            </div>
+            <div class="feature-item reveal">
+                <div class="feature-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                <div><h4>How is the studio funded?</h4><p>Premium app tiers, optional in-app advertising in free tiers, and bespoke engineering partnerships.</p></div>
+            </div>
+            <div class="feature-item reveal">
+                <div class="feature-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/></svg></div>
+                <div><h4>Do you accept work-for-hire projects?</h4><p>Yes. We partner with select studios and brands. Reach out via contact@jinyuanh.com with your project brief.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);" aria-label="Global distribution regions">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Global Reach</span>
+            <h2 class="section-title">Available Worldwide</h2>
+            <p class="section-subtitle">Localized and compliant across major regulatory regions.</p>
+        </div>
+        <div class="data-viz reveal">
+            <div class="data-viz-header">
+                <span class="data-viz-title">distribution.regions</span>
+                <span class="data-viz-badge">ACTIVE</span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; font-family: var(--font-mono); font-size: 13px;">
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">US - USA</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">UK - UK</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">DE - Germany</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">FR - France</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">ES - Spain</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">IT - Italy</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">NL - Netherlands</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">SE - Sweden</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">CA - Canada</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">AU - Australia</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">JP - Japan</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">KR - Korea</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">SG - Singapore</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">HK - Hong Kong</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">TW - Taiwan</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">IN - India</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">BR - Brazil</div>
+                <div style="padding: 10px; background: rgba(0,229,255,0.05); border: 1px solid var(--border-color); border-radius: 6px; color: var(--accent-cyan);">MX - Mexico</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" aria-label="App Store featured">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Editorial Recognition</span>
+            <h2 class="section-title">Featured &amp; Curated</h2>
+            <p class="section-subtitle">Selected for editorial distinction by App Store editors in multiple regions.</p>
+        </div>
+        <div class="grid grid-4">
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px; background: linear-gradient(135deg, #ff9100, #ff006e); border: none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <h3 style="font-size: 16px;">Editor's Choice</h3>
+                <p style="font-size: 13px;">Multi-Track Audio Editor</p>
+            </div>
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px; background: linear-gradient(135deg, #00e5ff, #2196f3); border: none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+                </div>
+                <h3 style="font-size: 16px;">Apps We Love</h3>
+                <p style="font-size: 13px;">Route Logger</p>
+            </div>
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px; background: linear-gradient(135deg, #7c4dff, #ff006e); border: none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <h3 style="font-size: 16px;">Product Hunt</h3>
+                <p style="font-size: 13px;">Goal Engine</p>
+            </div>
+            <div class="card reveal" style="text-align: center;">
+                <div class="card-icon" style="margin: 0 auto 16px; background: linear-gradient(135deg, #00ff88, #00e5ff); border: none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="12" cy="12" r="10"/></svg>
+                </div>
+                <h3 style="font-size: 16px;">Indie Spotlight</h3>
+                <p style="font-size: 13px;">Collection Vault</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);" aria-label="Press coverage">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Press Coverage</span>
+            <h2 class="section-title">In The Press</h2>
+            <p class="section-subtitle">Selected coverage from technology publications and design press.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">THE VERGE · 2026.07</div>
+                <p style="font-style: italic; margin-bottom: 12px;">"A studio proving that privacy and beauty are not at odds — if anything, they reinforce each other."</p>
+                <div style="font-size: 13px; color: var(--text-muted);">— Article: The New Wave of Privacy-First Indie Apps</div>
+            </div>
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">TECHCRUNCH · 2026.05</div>
+                <p style="font-style: italic; margin-bottom: 12px;">"Jinyuanh's minimalist approach has produced some of the most acclaimed utility apps of the year."</p>
+                <div style="font-size: 13px; color: var(--text-muted);">— Feature: Studio Spotlight</div>
+            </div>
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">SMASHING · 2026.04</div>
+                <p style="font-style: italic; margin-bottom: 12px;">"Their motion design language is the closest thing the App Store has to a Japanese tea ceremony."</p>
+                <div style="font-size: 13px; color: var(--text-muted);">— Review: Mobile UX of the Year</div>
+            </div>
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">WIRED · 2026.02</div>
+                <p style="font-style: italic; margin-bottom: 12px;">"If you're tired of being the product, this is what alternative software looks like."</p>
+                <div style="font-size: 13px; color: var(--text-muted);">— Editorial: Tools for the Surveillance-Fatigued</div>
+            </div>
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">MACWORLD · 2025.12</div>
+                <p style="font-style: italic; margin-bottom: 12px;">"The audio editor app Apple should have shipped."</p>
+                <div style="font-size: 13px; color: var(--text-muted);">— Review: Multi-Track Audio Editor</div>
+            </div>
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">FAST COMPANY · 2025.11</div>
+                <p style="font-style: italic; margin-bottom: 12px;">"One of the most innovative indie studios to watch this year."</p>
+                <div style="font-size: 13px; color: var(--text-muted);">— Most Innovative Companies List</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>&lt;jinyuanh/&gt;</h3>
+                <p>Engineering minimalism. Privacy-first digital products crafted with respect, intention, and uncompromising attention to detail.</p>
+                <p style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);">A studio for software that respects humans.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="advantages.html">Advantages</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:contact@jinyuanh.com">contact@jinyuanh.com</a></li>
+                    <li><a href="mailto:support@jinyuanh.com">support@jinyuanh.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jinyuanh. All rights reserved. Built with privacy by design.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms-of-service.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/enhancements.js"></script>
+</body>
+</html>
+
+

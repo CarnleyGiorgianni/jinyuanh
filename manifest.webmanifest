@@ -1,0 +1,17 @@
+{
+  "name": "Jinyuanh.com - Engineering Minimalism",
+  "short_name": "Jinyuanh",
+  "description": "Privacy-first digital products studio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#00e5ff",
+  "icons": [
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

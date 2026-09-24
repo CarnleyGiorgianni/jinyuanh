@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" aria-label="Collection Vault App Icon">
+  <defs>
+    <linearGradient id="vtBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#161d33"/>
+    </linearGradient>
+    <linearGradient id="vtAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9100"/>
+      <stop offset="100%" stop-color="#ff006e"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="url(#vtBg)"/>
+  <g transform="translate(100, 100)">
+    <polygon points="0,-50 12,-30 12,10 0,30 -12,10 -12,-30" fill="none" stroke="url(#vtAccent)" stroke-width="2"/>
+    <polygon points="0,-50 12,-30 0,-25 -12,-30" fill="url(#vtAccent)" opacity="0.7"/>
+    <polygon points="0,-25 12,-30 12,10 0,30" fill="url(#vtAccent)" opacity="0.5"/>
+    <polygon points="0,-25 -12,-30 -12,10 0,30" fill="url(#vtAccent)" opacity="0.3"/>
+    <line x1="0" y1="-30" x2="0" y2="20" stroke="white" stroke-width="1" opacity="0.6"/>
+    <line x1="-6" y1="-15" x2="6" y2="-15" stroke="white" stroke-width="1" opacity="0.6"/>
+    <line x1="-6" y1="0" x2="6" y2="0" stroke="white" stroke-width="1" opacity="0.6"/>
+    <line x1="-6" y1="15" x2="6" y2="15" stroke="white" stroke-width="1" opacity="0.6"/>
+  </g>
+</svg>

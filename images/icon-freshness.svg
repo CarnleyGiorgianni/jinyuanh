@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" aria-label="Freshness Tracker App Icon">
+  <defs>
+    <linearGradient id="frBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#161d33"/>
+    </linearGradient>
+    <linearGradient id="frAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="url(#frBg)"/>
+  <g transform="translate(100, 100)">
+    <path d="M-30,-40 Q-30,-30 -20,-25 Q-10,-20 0,-10 Q10,0 20,15 Q30,30 20,40" fill="none" stroke="url(#frAccent)" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="-25" cy="-35" rx="12" ry="6" fill="url(#frAccent)" opacity="0.8"/>
+    <ellipse cx="-25" cy="-35" rx="6" ry="3" fill="#0a0e1a" opacity="0.4"/>
+    <circle cx="-15" cy="-15" r="4" fill="url(#frAccent)"/>
+    <circle cx="5" cy="0" r="4" fill="url(#frAccent)"/>
+    <circle cx="25" cy="20" r="4" fill="url(#frAccent)"/>
+    <text x="-8" y="55" font-family="JetBrains Mono, monospace" font-size="14" fill="url(#frAccent)" text-anchor="middle" font-weight="700">FRESH</text>
+  </g>
+</svg>

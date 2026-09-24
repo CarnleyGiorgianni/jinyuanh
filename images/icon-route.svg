@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" aria-label="Route Logger App Icon">
+  <defs>
+    <linearGradient id="rtBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#161d33"/>
+    </linearGradient>
+    <linearGradient id="rtAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="url(#rtBg)"/>
+  <g transform="translate(100, 100)">
+    <circle cx="0" cy="0" r="60" fill="none" stroke="url(#rtAccent)" stroke-width="1" opacity="0.3"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#rtAccent)" stroke-width="1" opacity="0.5"/>
+    <path d="M-40 20 Q-30 -20, 0 -10 T40 -30" fill="none" stroke="url(#rtAccent)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="-40" cy="20" r="5" fill="url(#rtAccent)"/>
+    <circle cx="40" cy="-30" r="5" fill="url(#rtAccent)"/>
+    <circle cx="0" cy="-10" r="3" fill="#00ff88"/>
+    <line x1="0" y1="0" x2="0" y2="-25" stroke="url(#rtAccent)" stroke-width="2"/>
+    <polygon points="-3,-25 3,-25 0,-32" fill="url(#rtAccent)"/>
+  </g>
+</svg>

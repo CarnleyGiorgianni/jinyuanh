@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0e1a">
+    <title>Roadmap - Jinyuanh.com | Future Direction & Upcoming Releases</title>
+    <meta name="description" content="Jinyuanh public roadmap: upcoming features, planned releases, technology investments, and our 2027+ vision for privacy-first digital products.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Roadmap - Jinyuanh.com">
+    <meta property="og:url" content="https://jinyuanh.com/roadmap.html">
+    <link rel="canonical" href="https://jinyuanh.com/roadmap.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="loading-screen" id="loading-screen">
+    <div class="loading-logo">&lt;jinyuanh/&gt;</div>
+    <div class="loading-bar-container"><div class="loading-bar" id="loading-bar"></div></div>
+    <div class="loading-text" id="loading-text">INITIALIZING SYSTEM</div>
+    <div class="loading-percent" id="loading-percent">0%</div>
+</div>
+
+<canvas id="particles-canvas"></canvas>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo" aria-label="Jinyuanh Home">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="20" cy="20" r="18" stroke="#00e5ff" stroke-width="2"/>
+                <path d="M10 20 L18 12 L26 28 L30 20" stroke="#00e5ff" stroke-width="2" fill="none"/>
+                <circle class="logo-dot" cx="20" cy="20" r="3" fill="#00e5ff"/>
+            </svg>
+            <span>&lt;jinyuanh/&gt;</span>
+        </a>
+        <ul class="nav-menu" role="menubar">
+            <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+            <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+            <li role="none"><a href="advantages.html" role="menuitem">Advantages</a></li>
+            <li role="none"><a href="capabilities.html" role="menuitem">Capabilities</a></li>
+            <li role="none"><a href="products.html" role="menuitem">Products</a></li>
+            <li role="none"><a href="roadmap.html" role="menuitem">Roadmap</a></li>
+            <li role="none"><a href="news.html" role="menuitem">News</a></li>
+            <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<section class="section" style="padding-top: 140px; min-height: 50vh;">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Public Roadmap</span>
+            <h1 class="section-title" style="font-size: clamp(36px, 5vw, 56px);">The Path Forward</h1>
+            <p class="section-subtitle">A transparent view of what we're building next. Updated quarterly. Subject to principled change.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+    <div class="container">
+        <div class="data-viz reveal">
+            <div class="data-viz-header">
+                <span class="data-viz-title">roadmap.status</span>
+                <span class="data-viz-badge">LIVE</span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 20px;">
+                <div style="padding: 16px; background: rgba(0,255,136,0.06); border: 1px solid rgba(0,255,136,0.2); border-radius: 8px;">
+                    <div style="color: var(--accent-green); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px;">Now Shipping</div>
+                    <div style="font-size: 24px; font-weight: 700;">12</div>
+                    <div style="font-size: 12px; color: var(--text-muted);">Features &amp; improvements</div>
+                </div>
+                <div style="padding: 16px; background: rgba(0,229,255,0.06); border: 1px solid rgba(0,229,255,0.2); border-radius: 8px;">
+                    <div style="color: var(--accent-cyan); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px;">In Progress</div>
+                    <div style="font-size: 24px; font-weight: 700;">8</div>
+                    <div style="font-size: 12px; color: var(--text-muted);">Active initiatives</div>
+                </div>
+                <div style="padding: 16px; background: rgba(124,77,255,0.06); border: 1px solid rgba(124,77,255,0.2); border-radius: 8px;">
+                    <div style="color: var(--accent-purple); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px;">Planned</div>
+                    <div style="font-size: 24px; font-weight: 700;">15</div>
+                    <div style="font-size: 12px; color: var(--text-muted);">Quarter scope</div>
+                </div>
+                <div style="padding: 16px; background: rgba(255,0,110,0.06); border: 1px solid rgba(255,0,110,0.2); border-radius: 8px;">
+                    <div style="color: var(--accent-pink); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px;">Considering</div>
+                    <div style="font-size: 24px; font-weight: 700;">23</div>
+                    <div style="font-size: 12px; color: var(--text-muted);">Backlog items</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Q4 2026</span>
+            <h2 class="section-title">Now Shipping</h2>
+            <p class="section-subtitle">Features currently in active rollout across our product matrix.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card reveal" style="border-color: rgba(0,255,136,0.3);">
+                <div style="display: inline-block; padding: 4px 10px; background: rgba(0,255,136,0.15); color: var(--accent-green); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; margin-bottom: 12px;">SHIPPING</div>
+                <h3>Audio Editor v3.0</h3>
+                <p>Complete rewrite of the audio engine using AudioKit v6. Sub-millisecond latency.</p>
+            </div>
+            <div class="card reveal" style="border-color: rgba(0,255,136,0.3);">
+                <div style="display: inline-block; padding: 4px 10px; background: rgba(0,255,136,0.15); color: var(--accent-green); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; margin-bottom: 12px;">SHIPPING</div>
+                <h3>Vision Framework</h3>
+                <p>On-device document OCR across all credential-tracking apps.</p>
+            </div>
+            <div class="card reveal" style="border-color: rgba(0,255,136,0.3);">
+                <div style="display: inline-block; padding: 4px 10px; background: rgba(0,255,136,0.15); color: var(--accent-green); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; margin-bottom: 12px;">SHIPPING</div>
+                <h3>SwiftUI Migration</h3>
+                <p>All legacy UIKit views migrated to SwiftUI. 30% smaller binary.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Q1 2027</span>
+            <h2 class="section-title">In Progress</h2>
+            <p class="section-subtitle">Currently under active development.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card reveal" style="border-color: rgba(0,229,255,0.3);">
+                <div style="display: inline-block; padding: 4px 10px; background: rgba(0,229,255,0.15); color: var(--accent-cyan); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; margin-bottom: 12px;">ACTIVE</div>
+                <h3>visionOS Native Apps</h3>
+                <p>Spatial computing versions of our flagship applications for Apple Vision Pro.</p>
+            </div>
+            <div class="card reveal" style="border-color: rgba(0,229,255,0.3);">
+                <div style="display: inline-block; padding: 4px 10px; background: rgba(0,229,255,0.15); color: var(--accent-cyan); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; margin-bottom: 12px;">ACTIVE</div>
+                <h3>Apple Intelligence</h3>
+                <p>On-device LLM integration for natural-language content creation.</p>
+            </div>
+            <div class="card reveal" style="border-color: rgba(0,229,255,0.3);">
+                <div style="display: inline-block; padding: 4px 10px; background: rgba(0,229,255,0.15); color: var(--accent-cyan); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; margin-bottom: 12px;">ACTIVE</div>
+                <h3>macOS Catalyst</h3>
+                <p>Native Mac versions of all iPad applications. Full multi-window support.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// 2027+ Vision</span>
+            <h2 class="section-title">The Horizon</h2>
+            <p class="section-subtitle">Long-term investments shaping the next decade of privacy-first computing.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card reveal" style="border-color: rgba(124,77,255,0.3);">
+                <div style="display: inline-block; padding: 4px 10px; background: rgba(124,77,255,0.15); color: var(--accent-purple); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; margin-bottom: 12px;">2027</div>
+                <h3>Web Platform Launch</h3>
+                <p>Browser-based versions using WebAssembly. Same privacy.</p>
+            </div>
+            <div class="card reveal" style="border-color: rgba(124,77,255,0.3);">
+                <div style="display: inline-block; padding: 4px 10px; background: rgba(124,77,255,0.15); color: var(--accent-purple); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; margin-bottom: 12px;">2028</div>
+                <h3>Open-Source Foundations</h3>
+                <p>Publishing core libraries under permissive licenses.</p>
+            </div>
+            <div class="card reveal" style="border-color: rgba(124,77,255,0.3);">
+                <div style="display: inline-block; padding: 4px 10px; background: rgba(124,77,255,0.15); color: var(--accent-purple); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; margin-bottom: 12px;">2028+</div>
+                <h3>Privacy-First Standards</h3>
+                <p>Contributing to IAB, W3C for stronger local-first defaults.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>&lt;jinyuanh/&gt;</h3>
+                <p>Engineering minimalism. Privacy-first digital products crafted with respect, intention, and uncompromising attention to detail.</p>
+                <p style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);">A studio for software that respects humans.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="advantages.html">Advantages</a></li>
+                    <li><a href="capabilities.html">Capabilities</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:contact@jinyuanh.com">contact@jinyuanh.com</a></li>
+                    <li><a href="mailto:support@jinyuanh.com">support@jinyuanh.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jinyuanh. All rights reserved. Built with privacy by design.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms-of-service.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/enhancements.js"></script>
+</body>
+</html>

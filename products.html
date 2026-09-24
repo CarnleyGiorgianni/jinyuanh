@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0e1a">
+    <title>Products - Jinyuanh.com | App Store Portfolio Deep Dive</title>
+    <meta name="description" content="Deep dive into Jinyuanh's iOS and Android applications: multi-track audio editor, freshness tracker, route logger, credential expiry, goal engine, and collection vault.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Products - Jinyuanh.com">
+    <meta property="og:url" content="https://jinyuanh.com/products.html">
+    <link rel="canonical" href="https://jinyuanh.com/products.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="loading-screen" id="loading-screen">
+    <div class="loading-logo">&lt;jinyuanh/&gt;</div>
+    <div class="loading-bar-container"><div class="loading-bar" id="loading-bar"></div></div>
+    <div class="loading-text" id="loading-text">INITIALIZING SYSTEM</div>
+    <div class="loading-percent" id="loading-percent">0%</div>
+</div>
+
+<canvas id="particles-canvas"></canvas>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo" aria-label="Jinyuanh Home">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="20" cy="20" r="18" stroke="#00e5ff" stroke-width="2"/>
+                <path d="M10 20 L18 12 L26 28 L30 20" stroke="#00e5ff" stroke-width="2" fill="none"/>
+                <circle class="logo-dot" cx="20" cy="20" r="3" fill="#00e5ff"/>
+            </svg>
+            <span>&lt;jinyuanh/&gt;</span>
+        </a>
+        <ul class="nav-menu" role="menubar">
+            <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+            <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+            <li role="none"><a href="advantages.html" role="menuitem">Advantages</a></li>
+            <li role="none"><a href="capabilities.html" role="menuitem">Capabilities</a></li>
+            <li role="none"><a href="products.html" role="menuitem">Products</a></li><li role="none"><a href="roadmap.html" role="menuitem">Roadmap</a></li>
+            <li role="none"><a href="news.html" role="menuitem">News</a></li>
+            <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<section class="section" style="padding-top: 140px; min-height: 50vh;">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Product Portfolio</span>
+            <h1 class="section-title" style="font-size: clamp(36px, 5vw, 56px);">Application Matrix</h1>
+            <p class="section-subtitle">A detailed look at each Jinyuanh application — design intent, technical approach, and user outcomes.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top: 0;" id="audio">
+    <div class="container">
+        <div class="grid grid-2" style="grid-template-columns: 1fr 1.2fr; align-items: center;">
+            <div class="reveal">
+                <img src="images/icon-audio.svg" alt="Multi-Track Audio Editor" style="width: 100%; max-width: 280px; display: block; margin: 0 auto; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,229,255,0.2);">
+            </div>
+            <div class="reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">v2.6.0 · iOS / iPadOS / macOS</div>
+                <h2 style="font-size: 36px; margin-bottom: 16px;">Multi-Track Audio Editor</h2>
+                <p style="margin-bottom: 16px;">Our flagship privacy-first audio workstation. Multi-track recording, mixing, effects, and export — entirely on-device. Built for podcasters, musicians, and field recordists who value their recordings.</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 24px; font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary);">
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ 32-track timeline with per-track effects</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Real-time FFT spectral visualization</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Built-in synthesizer with wavetable + granular</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Lossless export to WAV / FLAC / ALAC</li>
+                    <li style="padding: 6px 0;">→ Generative ambient layer engine (v2.6)</li>
+                </ul>
+                <div style="display: flex; gap: 12px;">
+                    <span class="service-tile-tag">Offline</span>
+                    <span class="service-tile-tag">Pro Audio</span>
+                    <span class="service-tile-tag">Universal</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);" id="freshness">
+    <div class="container">
+        <div class="grid grid-2" style="grid-template-columns: 1.2fr 1fr; align-items: center;">
+            <div class="reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">v2.1.0 · iOS / Android</div>
+                <h2 style="font-size: 36px; margin-bottom: 16px;">Freshness Tracker</h2>
+                <p style="margin-bottom: 16px;">Track ingredient shelf-life with elegant algorithms that calculate exact expiry windows. Reduces household food waste by an average of 23% among active users.</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 24px; font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary);">
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Barcode scan + manual entry</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Storage-location aware expiry calculation</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Recipe suggestions from soon-to-expire items</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Apple Watch complication</li>
+                    <li style="padding: 6px 0;">→ iCloud sync via private container (opt-in)</li>
+                </ul>
+                <div style="display: flex; gap: 12px;">
+                    <span class="service-tile-tag">Kitchen</span>
+                    <span class="service-tile-tag">Local-First</span>
+                </div>
+            </div>
+            <div class="reveal">
+                <img src="images/icon-freshness.svg" alt="Freshness Tracker" style="width: 100%; max-width: 280px; display: block; margin: 0 auto; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,255,136,0.2);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="route">
+    <div class="container">
+        <div class="grid grid-2" style="grid-template-columns: 1fr 1.2fr; align-items: center;">
+            <div class="reveal">
+                <img src="images/icon-route.svg" alt="Route Logger" style="width: 100%; max-width: 280px; display: block; margin: 0 auto; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,229,255,0.2);">
+            </div>
+            <div class="reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">v1.4.2 · iOS / watchOS / Android</div>
+                <h2 style="font-size: 36px; margin-bottom: 16px;">Route Logger</h2>
+                <p style="margin-bottom: 16px;">A trajectory recorder that respects your privacy. Logs GPS routes to local storage with optional heatmap visualization and GPX export.</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 24px; font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary);">
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Background location tracking with battery awareness</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Heatmap overlay with privacy-preserving aggregation</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ GPX / KML / GeoJSON export</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Apple Watch + Wear OS companion apps</li>
+                    <li style="padding: 6px 0;">→ Zero cloud sync by default</li>
+                </ul>
+                <div style="display: flex; gap: 12px;">
+                    <span class="service-tile-tag">GPS</span>
+                    <span class="service-tile-tag">Travel</span>
+                    <span class="service-tile-tag">Privacy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);" id="expiry">
+    <div class="container">
+        <div class="grid grid-2" style="grid-template-columns: 1.2fr 1fr; align-items: center;">
+            <div class="reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">v1.2.0 · iOS</div>
+                <h2 style="font-size: 36px; margin-bottom: 16px;">Credential Expiry Alert</h2>
+                <p style="margin-bottom: 16px;">A reminder engine for licenses, certifications, and credentials. Vision-framework document scanning extracts dates directly from physical cards and PDFs.</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 24px; font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary);">
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ On-device OCR for ID and certificate scanning</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Customisable alert lead times</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Family Sharing support</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Local notifications (no push required)</li>
+                    <li style="padding: 6px 0;">→ Encrypted PDF archival</li>
+                </ul>
+                <div style="display: flex; gap: 12px;">
+                    <span class="service-tile-tag">OCR</span>
+                    <span class="service-tile-tag">Archive</span>
+                </div>
+            </div>
+            <div class="reveal">
+                <img src="images/icon-expiry.svg" alt="Credential Expiry Alert" style="width: 100%; max-width: 280px; display: block; margin: 0 auto; border-radius: 24px; box-shadow: 0 20px 60px rgba(124,77,255,0.2);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="goal">
+    <div class="container">
+        <div class="grid grid-2" style="grid-template-columns: 1fr 1.2fr; align-items: center;">
+            <div class="reveal">
+                <img src="images/icon-goal.svg" alt="Personal Goal Engine" style="width: 100%; max-width: 280px; display: block; margin: 0 auto; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,229,255,0.2);">
+            </div>
+            <div class="reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">v1.8.1 · iOS / Android</div>
+                <h2 style="font-size: 36px; margin-bottom: 16px;">Personal Goal Engine</h2>
+                <p style="margin-bottom: 16px;">Decomposes ambitious goals into actionable milestones. Uses constraint-based decomposition algorithms to balance ambition with realism.</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 24px; font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary);">
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Recursive goal decomposition engine</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Calendar integration with iCal / Google Calendar</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Streak tracking with motivational nudges</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Habit compounding visualizer</li>
+                    <li style="padding: 6px 0;">→ Privacy-respecting opt-in sharing</li>
+                </ul>
+                <div style="display: flex; gap: 12px;">
+                    <span class="service-tile-tag">Productivity</span>
+                    <span class="service-tile-tag">Local</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);" id="vault">
+    <div class="container">
+        <div class="grid grid-2" style="grid-template-columns: 1.2fr 1fr; align-items: center;">
+            <div class="reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 12px;">v0.9.0 (Beta) · iOS</div>
+                <h2 style="font-size: 36px; margin-bottom: 16px;">Collection Vault</h2>
+                <p style="margin-bottom: 16px;">An aesthetic cataloging tool for jewelry, watches, and collectibles. Local-first ledgering with optional encrypted backup.</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 24px; font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary);">
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ High-resolution photo capture with depth data</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Insurance-grade appraisal exports (PDF)</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Provenance tracking</li>
+                    <li style="padding: 6px 0; border-bottom: 1px dashed var(--border-color);">→ Searchable metadata</li>
+                    <li style="padding: 6px 0;">→ Optional encrypted iCloud backup</li>
+                </ul>
+                <div style="display: flex; gap: 12px;">
+                    <span class="service-tile-tag">Catalog</span>
+                    <span class="service-tile-tag">Aesthetic</span>
+                </div>
+            </div>
+            <div class="reveal">
+                <img src="images/icon-vault.svg" alt="Collection Vault" style="width: 100%; max-width: 280px; display: block; margin: 0 auto; border-radius: 24px; box-shadow: 0 20px 60px rgba(255,144,0,0.2);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>&lt;jinyuanh/&gt;</h3>
+                <p>Engineering minimalism. Privacy-first digital products crafted with respect, intention, and uncompromising attention to detail.</p>
+                <p style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);">A studio for software that respects humans.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="advantages.html">Advantages</a></li>
+                    <li><a href="capabilities.html">Capabilities</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:contact@jinyuanh.com">contact@jinyuanh.com</a></li>
+                    <li><a href="mailto:support@jinyuanh.com">support@jinyuanh.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jinyuanh. All rights reserved. Built with privacy by design.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms-of-service.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/enhancements.js"></script>
+</body>
+</html>

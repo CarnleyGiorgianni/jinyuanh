@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" width="1920" height="600" aria-label="Jinyuanh Hero Banner">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#0f1525"/>
+      <stop offset="100%" stop-color="#161d33"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00e5ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#7c4dff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c4dff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7c4dff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dotgrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="rgba(0,229,255,0.15)"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="600" fill="url(#heroBg)"/>
+  <rect width="1920" height="600" fill="url(#dotgrid)"/>
+  <circle cx="1500" cy="200" r="300" fill="url(#orb1)"/>
+  <circle cx="400" cy="450" r="250" fill="url(#orb2)"/>
+  <g opacity="0.5">
+    <line x1="100" y1="400" x2="1820" y2="400" stroke="url(#lineGrad)" stroke-width="1"/>
+    <line x1="100" y1="450" x2="1820" y2="450" stroke="url(#lineGrad)" stroke-width="1"/>
+    <line x1="100" y1="500" x2="1820" y2="500" stroke="url(#lineGrad)" stroke-width="1"/>
+  </g>
+  <g transform="translate(960, 300)">
+    <circle r="150" stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.4"/>
+    <circle r="100" stroke="#00e5ff" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M-100,0 L-50,-50 L0,50 L50,0 L100,-50" stroke="#00e5ff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle r="8" fill="#00e5ff"/>
+  </g>
+</svg>

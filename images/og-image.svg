@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" aria-label="Jinyuanh Open Graph Card">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#161d33"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#7c4dff"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,229,255,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="600" cy="315" r="180" stroke="url(#accent)" stroke-width="3" fill="none" opacity="0.6"/>
+  <circle cx="600" cy="315" r="120" stroke="url(#accent)" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M380 315 L520 230 L640 410 L720 315 L820 220" stroke="url(#accent)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="600" cy="315" r="14" fill="url(#accent)"/>
+  <text x="600" y="450" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="48" font-weight="700" fill="#e6f1ff">&lt;jinyuanh/&gt;</text>
+  <text x="600" y="500" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" fill="#8892b0">Engineering Minimalism · Privacy First</text>
+</svg>

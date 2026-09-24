@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" aria-label="Credential Expiry App Icon">
+  <defs>
+    <linearGradient id="exBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#161d33"/>
+    </linearGradient>
+    <linearGradient id="exAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c4dff"/>
+      <stop offset="100%" stop-color="#ff006e"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="url(#exBg)"/>
+  <g transform="translate(100, 100)">
+    <circle cx="0" cy="0" r="55" fill="none" stroke="url(#exAccent)" stroke-width="3"/>
+    <line x1="0" y1="-55" x2="0" y2="-45" stroke="url(#exAccent)" stroke-width="3"/>
+    <line x1="0" y1="55" x2="0" y2="45" stroke="url(#exAccent)" stroke-width="3"/>
+    <line x1="-55" y1="0" x2="-45" y2="0" stroke="url(#exAccent)" stroke-width="3"/>
+    <line x1="55" y1="0" x2="45" y2="0" stroke="url(#exAccent)" stroke-width="3"/>
+    <line x1="0" y1="0" x2="30" y2="-30" stroke="url(#exAccent)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="url(#exAccent)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="3" fill="url(#exAccent)"/>
+    <path d="M-12,-12 L-12,12 L12,12" fill="none" stroke="#00ff88" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  </g>
+</svg>

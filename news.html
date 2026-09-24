@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0e1a">
+    <title>News & Updates - Jinyuanh.com | Studio Updates & Tech Insights</title>
+    <meta name="description" content="Latest updates from Jinyuanh studio: product releases, technical articles, App Store feature announcements, programmatic generation milestones, and privacy engineering research.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="News & Updates - Jinyuanh.com">
+    <meta property="og:url" content="https://jinyuanh.com/news.html">
+    <link rel="canonical" href="https://jinyuanh.com/news.html">
+    <link rel="alternate" hreflang="en" href="https://jinyuanh.com/news.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="loading-screen" id="loading-screen">
+    <div class="loading-logo">&lt;jinyuanh/&gt;</div>
+    <div class="loading-bar-container"><div class="loading-bar" id="loading-bar"></div></div>
+    <div class="loading-text" id="loading-text">INITIALIZING SYSTEM</div>
+    <div class="loading-percent" id="loading-percent">0%</div>
+</div>
+
+<canvas id="particles-canvas"></canvas>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo" aria-label="Jinyuanh Home">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="20" cy="20" r="18" stroke="#00e5ff" stroke-width="2"/>
+                <path d="M10 20 L18 12 L26 28 L30 20" stroke="#00e5ff" stroke-width="2" fill="none"/>
+                <circle class="logo-dot" cx="20" cy="20" r="3" fill="#00e5ff"/>
+            </svg>
+            <span>&lt;jinyuanh/&gt;</span>
+        </a>
+        <ul class="nav-menu" role="menubar">
+            <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+            <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+            <li role="none"><a href="advantages.html" role="menuitem">Advantages</a></li><li role="none"><a href="capabilities.html" role="menuitem">Capabilities</a></li><li role="none"><a href="products.html" role="menuitem">Products</a></li><li role="none"><a href="roadmap.html" role="menuitem">Roadmap</a></li>
+            <li role="none"><a href="news.html" role="menuitem">News</a></li>
+            <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<section class="section" style="padding-top: 140px; min-height: 40vh;">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Studio Dispatch</span>
+            <h1 class="section-title" style="font-size: clamp(36px, 5vw, 56px);">News & Updates</h1>
+            <p class="section-subtitle">Product launches, technical essays, App Store features, and thinking from inside the studio.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+    <div class="container">
+        <article class="card reveal" style="margin-bottom: 24px;">
+            <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
+                <span class="service-tile-tag">Featured</span>
+                <span class="service-tile-tag">App Release</span>
+                <span class="service-tile-tag">2026.09</span>
+            </div>
+            <h2 style="font-size: 28px; margin-bottom: 12px;">Multi-Track Audio Editor 2.0 — Generative Ambient Layers</h2>
+            <p style="margin-bottom: 16px;">Our flagship offline audio application rebuilt with a new generative engine creating endless ambient textures in real-time. Combined with zero-touch privacy and an entirely redesigned interface, this represents our most ambitious iteration yet.</p>
+            <div style="font-family: var(--font-mono); font-size: 13px; color: var(--text-muted);">By Studio Team · 5 min read · Engineering</div>
+        </article>
+        <div class="grid grid-2">
+            <article class="card reveal">
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
+                    <span class="service-tile-tag">Engineering</span>
+                    <span class="service-tile-tag">Privacy</span>
+                </div>
+                <h3 style="font-size: 22px; margin-bottom: 12px;">Why We Process Everything On-Device</h3>
+                <p>A technical essay on the architectural decisions behind our privacy-first product matrix.</p>
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-top: 16px;">2026.08 · Engineering</div>
+            </article>
+            <article class="card reveal">
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
+                    <span class="service-tile-tag">Design</span>
+                    <span class="service-tile-tag">UX</span>
+                </div>
+                <h3 style="font-size: 22px; margin-bottom: 12px;">Minimalism vs. Function: Our Design Hierarchy</h3>
+                <p>How we decide what stays and what goes in our interfaces — the ranking of pixels, motion, and meaning.</p>
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-top: 16px;">2026.07 · Design</div>
+            </article>
+            <article class="card reveal">
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
+                    <span class="service-tile-tag">Release</span>
+                    <span class="service-tile-tag">App Store</span>
+                </div>
+                <h3 style="font-size: 22px; margin-bottom: 12px;">Route Logger Reaches 100k Downloads</h3>
+                <p>A milestone for our locally-stored, GPS-based journey tracker — completely free of cloud sync.</p>
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-top: 16px;">2026.07 · Product</div>
+            </article>
+            <article class="card reveal">
+                <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
+                    <span class="service-tile-tag">R&D</span>
+                    <span class="service-tile-tag">AI</span>
+                </div>
+                <h3 style="font-size: 22px; margin-bottom: 12px;">Programmatic Generation Research Update</h3>
+                <p>Our latest procedural algorithms for content variation, organic visual composition, and adaptive audio.</p>
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-top: 16px;">2026.06 · Research</div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">// Archive</span>
+            <h2 class="section-title">Recent Releases</h2>
+            <p class="section-subtitle">Version history and release notes from the past quarter.</p>
+        </div>
+        <div class="grid grid-2">
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 8px;">v2.6.0 · 2026.09.12</div>
+                <h3 style="font-size: 18px;">Multi-Track Audio Editor</h3>
+                <p style="font-size: 14px;">Added generative ambient layer engine, redesigned transport, new compressor effect.</p>
+            </div>
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 8px;">v1.4.2 · 2026.09.05</div>
+                <h3 style="font-size: 18px;">Route Logger</h3>
+                <p style="font-size: 14px;">Heatmap visualization, GPX export, Apple Watch companion app.</p>
+            </div>
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 8px;">v2.1.0 · 2026.08.20</div>
+                <h3 style="font-size: 18px;">Freshness Tracker</h3>
+                <p style="font-size: 14px;">Recipe suggestion engine based on expiring ingredients.</p>
+            </div>
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 8px;">v1.8.1 · 2026.08.08</div>
+                <h3 style="font-size: 18px;">Personal Goal Engine</h3>
+                <p style="font-size: 14px;">Calendar sync, milestone sharing (opt-in), dark mode refinements.</p>
+            </div>
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 8px;">v1.2.0 · 2026.07.25</div>
+                <h3 style="font-size: 18px;">Credential Expiry Alert</h3>
+                <p style="font-size: 14px;">Family sharing support, document scanning via Vision framework.</p>
+            </div>
+            <div class="card reveal">
+                <div style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); margin-bottom: 8px;">v0.9.0 · 2026.07.10</div>
+                <h3 style="font-size: 18px;">Collection Vault (Beta)</h3>
+                <p style="font-size: 14px;">First public release of our aesthetic collectibles cataloging app.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>&lt;jinyuanh/&gt;</h3>
+                <p>Engineering minimalism. Privacy-first digital products crafted with respect, intention, and uncompromising attention to detail.</p>
+                <p style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);">A studio for software that respects humans.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="advantages.html">Advantages</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:contact@jinyuanh.com">contact@jinyuanh.com</a></li>
+                    <li><a href="mailto:support@jinyuanh.com">support@jinyuanh.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jinyuanh. All rights reserved. Built with privacy by design.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms-of-service.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/enhancements.js"></script>
+</body>
+</html>
